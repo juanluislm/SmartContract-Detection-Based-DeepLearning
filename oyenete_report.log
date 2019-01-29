@@ -1,0 +1,2193 @@
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/1.sol:DOXYCOIN:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 62.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/1.sol:8:5: Warning: Integer Underflow.
+    string public symbol
+contract1/1.sol:83:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/1.sol:6:5: Warning: Integer Underflow.
+    string public standard = 'DOXY COIN '
+contract1/1.sol:7:5: Warning: Integer Underflow.
+    string public name
+contract1/1.sol:74:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:contract1/1.sol:49:5: Warning: Integer Overflow.
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData)
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/10.sol:HumanStandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 53.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/10.sol:78:5: Warning: Integer Underflow.
+    string public name
+contract1/10.sol:81:5: Warning: Integer Underflow.
+    string public version = 'H0.1'
+contract1/10.sol:80:5: Warning: Integer Underflow.
+    string public symbol
+INFO:symExec:contract1/10.sol:38:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152
+    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+contract1/10.sol:93:5: Warning: Integer Overflow.
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/10.sol:49:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/10.sol:StandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/10.sol:38:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152
+    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+contract1/10.sol:49:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/100.sol:BasicToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/100.sol:23:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152
+    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+    _to = 1461501637330902918203684832716283019655932542975
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/100.sol:DATAToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/100.sol:23:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/100.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/100.sol:StandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/100.sol:23:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/104.sol:MultiMerkleMineWithGasToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 14.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/104.sol:20:5: Warning: Integer Overflow.
+    function burnGasAndFree(address gas_token, uint256 free, address _merkleMineContract, address[] _recipients, bytes _merkleProofs) public {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _recipients = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+contract1/104.sol:33:5: Warning: Integer Overflow.
+    function burnGasAndFreeFrom(address gas_token, uint256 free, address _merkleMineContract, address[] _recipients, bytes _merkleProofs) public {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _recipients = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/105.sol:RYZToken:
+INFO:symExec:	============ Results ===========
+Traceback (most recent call last):
+  File "./oyente.py", line 221, in <module>
+    main()
+  File "./oyente.py", line 216, in main
+    exit_code = analyze_solidity()
+  File "./oyente.py", line 109, in analyze_solidity
+    results, exit_code = run_solidity_analysis(inputs)
+  File "./oyente.py", line 86, in run_solidity_analysis
+    result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'])
+  File "/oyente/oyente/symExec.py", line 2457, in run
+    analyze()
+  File "/oyente/oyente/symExec.py", line 2440, in analyze
+    run_build_cfg_and_analyze(timeout_cb=timeout_cb)
+  File "/oyente/oyente/symExec.py", line 2397, in run_build_cfg_and_analyze
+    build_cfg_and_analyze()
+  File "/oyente/oyente/symExec.py", line 228, in build_cfg_and_analyze
+    full_sym_exec()  # jump targets are constructed on the fly
+  File "/oyente/oyente/symExec.py", line 547, in full_sym_exec
+    return sym_exec_block(params, 0, 0, 0, -1, 'fallback')
+  File "/oyente/oyente/symExec.py", line 687, in sym_exec_block
+    sym_exec_block(new_params, left_branch, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 660, in sym_exec_block
+    sym_exec_block(new_params, successor, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 687, in sym_exec_block
+    sym_exec_block(new_params, left_branch, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 687, in sym_exec_block
+    sym_exec_block(new_params, left_branch, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 687, in sym_exec_block
+    sym_exec_block(new_params, left_branch, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 660, in sym_exec_block
+    sym_exec_block(new_params, successor, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 715, in sym_exec_block
+    sym_exec_block(new_params, right_branch, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 660, in sym_exec_block
+    sym_exec_block(new_params, successor, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 660, in sym_exec_block
+    sym_exec_block(new_params, successor, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 687, in sym_exec_block
+    sym_exec_block(new_params, left_branch, block, depth, func_call, current_func_name)
+  File "/oyente/oyente/symExec.py", line 678, in sym_exec_block
+    if solver.check() == unsat:
+  File "/usr/local/lib/python2.7/dist-packages/z3/z3.py", line 6182, in check
+    r = Z3_solver_check_assumptions(self.ctx.ref(), self.solver, num, _assumptions)
+  File "/usr/local/lib/python2.7/dist-packages/z3/z3core.py", line 4139, in Z3_solver_check_assumptions
+    r = lib().Z3_solver_check_assumptions(a0, a1, a2, a3)
+KeyboardInterrupt
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/106.sol:SPMTToken:
+INFO:symExec:	============ Results ===========
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/1.sol:DOXYCOIN:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 62.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/1.sol:8:5: Warning: Integer Underflow.
+    string public symbol
+contract1/1.sol:83:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/1.sol:6:5: Warning: Integer Underflow.
+    string public standard = 'DOXY COIN '
+contract1/1.sol:7:5: Warning: Integer Underflow.
+    string public name
+contract1/1.sol:74:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:contract1/1.sol:49:5: Warning: Integer Overflow.
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData)
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/10.sol:HumanStandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 53.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/10.sol:78:5: Warning: Integer Underflow.
+    string public name
+contract1/10.sol:81:5: Warning: Integer Underflow.
+    string public version = 'H0.1'
+contract1/10.sol:80:5: Warning: Integer Underflow.
+    string public symbol
+INFO:symExec:contract1/10.sol:38:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152
+    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+contract1/10.sol:93:5: Warning: Integer Overflow.
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/10.sol:49:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/10.sol:StandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/10.sol:38:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152
+    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+contract1/10.sol:49:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/100.sol:BasicToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/100.sol:23:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152
+    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+    _to = 1461501637330902918203684832716283019655932542975
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/100.sol:DATAToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/100.sol:23:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/100.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/100.sol:StandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/100.sol:23:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/104.sol:MultiMerkleMineWithGasToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 14.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/104.sol:20:5: Warning: Integer Overflow.
+    function burnGasAndFree(address gas_token, uint256 free, address _merkleMineContract, address[] _recipients, bytes _merkleProofs) public {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _recipients = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+contract1/104.sol:33:5: Warning: Integer Overflow.
+    function burnGasAndFreeFrom(address gas_token, uint256 free, address _merkleMineContract, address[] _recipients, bytes _merkleProofs) public {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _recipients = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/105.sol:RYZToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/105.sol:159:5: Warning: Integer Overflow.
+    function adminClaimAirdropMultiple(address[] _addresses, uint _amount) public onlyOwner {        
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/105.sol:42:13: Warning: Integer Overflow.
+        c = a + b
+Integer Overflow occurs if:
+    _amount = 31582706044363783228869092695952588749798531615273407166948120792925774349621
+    balances[_to] = 108034400225318408420380440996632903434924151874951478569973452415569685626161
+    allowed[_from][msg.sender] = 31582706044363783228869092695952588749798531615273407166948120792925774349621
+    balances[_from] = 31582706044363783228869092695952588749798531615273407166948120792925774349621
+    _to = 1461501637330902918203684832716283019655932542975
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/105.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/106.sol:SPMTToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/106.sol:92:5: Warning: Integer Underflow.
+    string  public version = "1.0"
+INFO:symExec:contract1/106.sol:58:13: Warning: Integer Overflow.
+            balances[_to] += _value
+Integer Overflow occurs if:
+    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296
+    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+contract1/106.sol:11:21: Warning: Integer Overflow.
+        uint256 z = x + y
+Integer Overflow occurs if:
+    isFunding = 730750818665451459101842416358141509827966271488
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019710345259882855102646
+    tokenMigrated = 115792089237316195423570985008687907852844631706989390960126059905605615764958
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/106.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/106.sol:StandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/107.sol:TokenERC20:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 67.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/107.sol:154:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/107.sol:8:5: Warning: Integer Underflow.
+    string public symbol
+contract1/107.sol:7:5: Warning: Integer Underflow.
+    string public name
+contract1/107.sol:136:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:contract1/107.sol:60:16: Warning: Integer Overflow.
+        assert(balanceOf[_from] + balanceOf[_to]
+Integer Overflow occurs if:
+    _value = 0
+    balanceOf[_from] = 57896044618658097711785492504343953926634992332820282019728792003956564819967
+    balanceOf[_to] = 57896044618763410003454049691041871954318662765139177115129341115211412668417
+    _to = 1461501637330902918203684832716283019655932542975
+    allowance[_from][msg.sender] = 0
+contract1/107.sol:53:33: Warning: Integer Overflow.
+        uint previousBalances = balanceOf[_from] + balanceOf[_to]
+Integer Overflow occurs if:
+    _value = 0
+    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    balanceOf[_to] = 102754238
+    _to = 1461501637330902918203684832716283019655932542975
+    allowance[_from][msg.sender] = 0
+contract1/107.sol:116:5: Warning: Integer Overflow.
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData)
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/108.sol:AddressProxy:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 30.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/108.sol:63:9: Warning: Integer Underflow.
+        return contractsAddress[id].name
+Integer Underflow occurs if:
+    return contractsAddress[id].name = 1
+INFO:symExec:contract1/108.sol:16:5: Warning: Integer Overflow.
+    bytes32[] public availableIds
+contract1/108.sol:63:16: Warning: Integer Overflow.
+        return contractsAddress[id].name
+contract1/108.sol:37:5: Warning: Integer Overflow.
+    function addAddress(string name, address newAddress) public onlyOwner {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    name = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/108.sol:75:16: Warning: Integer Overflow.
+        return contractsAddress[id].updatedTime
+contract1/108.sol:67:16: Warning: Integer Overflow.
+        return contractsAddress[id].at
+contract1/108.sol:71:16: Warning: Integer Overflow.
+        return contractsAddress[id].createdTime
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/109.sol:Advertisement:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 68.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/109.sol:607:28: Warning: Integer Overflow.
+            cancelCampaign(bidIdList[i]
+Integer Overflow occurs if:
+    bidIdList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639423
+    owner = 0
+contract1/109.sol:681:9: Warning: Integer Overflow.
+        bidIdList.push(campaign.bidId)
+Integer Overflow occurs if:
+    budget = 99680074490191866274164813673650923762147211753355305550131047636265089368064
+    endDate = 0
+    bidIdList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    startDate = 0
+    price = 99680074490191866274164813673650923762147211753355305550131047636265089368064
+contract1/109.sol:515:1: Warning: Integer Overflow.
+contract Advertisement {
+^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    bidIdList.length = 38685626227668133590597632
+    owner = 0
+contract1/109.sol:579:17: Warning: Integer Overflow.
+                devBalance.devs.push(dev)
+Integer Overflow occurs if:
+    bidIdList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/109.sol:AdvertisementFinance:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 90.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/109.sol:326:9: Warning: Integer Underflow.
+        balanceDevelopers[_developer] -= _value
+Integer Underflow occurs if:
+    balanceDevelopers[_developer] = 0
+    advertisementContract = 0
+INFO:symExec:contract1/109.sol:339:54: Warning: Integer Overflow.
+            withdraw(developers[i],balanceDevelopers[developers[i]
+Integer Overflow occurs if:
+    developers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+contract1/109.sol:339:22: Warning: Integer Overflow.
+            withdraw(developers[i]
+Integer Overflow occurs if:
+    developers.length = 115792089237316195423570985008687907853269984665640564039457511950319091711999
+    owner = 0
+contract1/109.sol:319:9: Warning: Integer Overflow.
+        balanceDevelopers[_developer] += _value
+Integer Overflow occurs if:
+    balanceDevelopers[_developer] = 1
+    developerExists[_developer] = 255
+    advertisementContract = 0
+contract1/109.sol:260:1: Warning: Integer Overflow.
+contract AdvertisementFinance {
+^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    developerExists[_developer] = 0
+    advertisementContract = 0
+contract1/109.sol:315:13: Warning: Integer Overflow.
+            developers.push(_developer)
+Integer Overflow occurs if:
+    developerExists[_developer] = 0
+    advertisementContract = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/109.sol:AdvertisementStorage:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 68.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/109.sol:106:13: Warning: Integer Overflow.
+            campaign.startDate
+contract1/109.sol:109:13: Warning: Integer Overflow.
+            campaign.owner
+contract1/109.sol:108:13: Warning: Integer Overflow.
+            campaign.valid
+contract1/109.sol:104:13: Warning: Integer Overflow.
+            campaign.price
+contract1/109.sol:107:13: Warning: Integer Overflow.
+            campaign.endDate
+contract1/109.sol:208:16: Warning: Integer Overflow.
+        return campaigns[bidId].valid
+contract1/109.sol:200:9: Warning: Integer Overflow.
+        campaigns[bidId].endDate
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/109.sol:155:9: Warning: Integer Overflow.
+        campaigns[bidId].price
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/109.sol:215:9: Warning: Integer Overflow.
+        campaigns[bidId].valid
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/109.sol:163:16: Warning: Integer Overflow.
+        return campaigns[bidId].budget
+contract1/109.sol:230:9: Warning: Integer Overflow.
+        campaigns[bidId].owner
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/109.sol:148:16: Warning: Integer Overflow.
+        return campaigns[bidId].price
+contract1/109.sol:185:9: Warning: Integer Overflow.
+        campaigns[bidId].startDate
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/109.sol:178:16: Warning: Integer Overflow.
+        return campaigns[bidId].startDate
+contract1/109.sol:170:9: Warning: Integer Overflow.
+        campaigns[bidId].budget
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/109.sol:105:13: Warning: Integer Overflow.
+            campaign.budget
+contract1/109.sol:223:16: Warning: Integer Overflow.
+        return campaigns[bidId].owner
+contract1/109.sol:193:16: Warning: Integer Overflow.
+        return campaigns[bidId].endDate
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/109.sol:AppCoins:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/109.sol:485:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/109.sol:503:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    balances[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:contract1/109.sol:434:63: Warning: Integer Overflow.
+        if( balances[msg.sender] >= _amount && _amount > 0 && balances[_to] + _amount
+Integer Overflow occurs if:
+    _amount = 67419346655525027280071070946112097648534143608088887667851415925010121249705
+    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155
+    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/109.sol:CampaignLibrary:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/110.sol:Advertisement:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 68.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/110.sol:607:28: Warning: Integer Overflow.
+            cancelCampaign(bidIdList[i]
+Integer Overflow occurs if:
+    bidIdList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639423
+    owner = 0
+contract1/110.sol:681:9: Warning: Integer Overflow.
+        bidIdList.push(campaign.bidId)
+Integer Overflow occurs if:
+    budget = 99680074490191866274164813673650923762147211753355305550131047636265089368064
+    endDate = 0
+    bidIdList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    startDate = 0
+    price = 99680074490191866274164813673650923762147211753355305550131047636265089368064
+contract1/110.sol:515:1: Warning: Integer Overflow.
+contract Advertisement {
+^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    bidIdList.length = 38685626227668133590597632
+    owner = 0
+contract1/110.sol:579:17: Warning: Integer Overflow.
+                devBalance.devs.push(dev)
+Integer Overflow occurs if:
+    bidIdList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/110.sol:AdvertisementFinance:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 90.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/110.sol:326:9: Warning: Integer Underflow.
+        balanceDevelopers[_developer] -= _value
+Integer Underflow occurs if:
+    balanceDevelopers[_developer] = 0
+    advertisementContract = 0
+INFO:symExec:contract1/110.sol:339:54: Warning: Integer Overflow.
+            withdraw(developers[i],balanceDevelopers[developers[i]
+Integer Overflow occurs if:
+    developers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+contract1/110.sol:339:22: Warning: Integer Overflow.
+            withdraw(developers[i]
+Integer Overflow occurs if:
+    developers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+contract1/110.sol:319:9: Warning: Integer Overflow.
+        balanceDevelopers[_developer] += _value
+Integer Overflow occurs if:
+    balanceDevelopers[_developer] = 1
+    developerExists[_developer] = 255
+    advertisementContract = 0
+contract1/110.sol:260:1: Warning: Integer Overflow.
+contract AdvertisementFinance {
+^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    developerExists[_developer] = 0
+    advertisementContract = 0
+contract1/110.sol:315:13: Warning: Integer Overflow.
+            developers.push(_developer)
+Integer Overflow occurs if:
+    developerExists[_developer] = 0
+    advertisementContract = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/110.sol:AdvertisementStorage:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 68.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/110.sol:106:13: Warning: Integer Overflow.
+            campaign.startDate
+contract1/110.sol:109:13: Warning: Integer Overflow.
+            campaign.owner
+contract1/110.sol:108:13: Warning: Integer Overflow.
+            campaign.valid
+contract1/110.sol:104:13: Warning: Integer Overflow.
+            campaign.price
+contract1/110.sol:107:13: Warning: Integer Overflow.
+            campaign.endDate
+contract1/110.sol:208:16: Warning: Integer Overflow.
+        return campaigns[bidId].valid
+contract1/110.sol:200:9: Warning: Integer Overflow.
+        campaigns[bidId].endDate
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/110.sol:155:9: Warning: Integer Overflow.
+        campaigns[bidId].price
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/110.sol:215:9: Warning: Integer Overflow.
+        campaigns[bidId].valid
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/110.sol:163:16: Warning: Integer Overflow.
+        return campaigns[bidId].budget
+contract1/110.sol:230:9: Warning: Integer Overflow.
+        campaigns[bidId].owner
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/110.sol:148:16: Warning: Integer Overflow.
+        return campaigns[bidId].price
+contract1/110.sol:185:9: Warning: Integer Overflow.
+        campaigns[bidId].startDate
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/110.sol:178:16: Warning: Integer Overflow.
+        return campaigns[bidId].startDate
+contract1/110.sol:170:9: Warning: Integer Overflow.
+        campaigns[bidId].budget
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/110.sol:105:13: Warning: Integer Overflow.
+            campaign.budget
+contract1/110.sol:223:16: Warning: Integer Overflow.
+        return campaigns[bidId].owner
+contract1/110.sol:193:16: Warning: Integer Overflow.
+        return campaigns[bidId].endDate
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/110.sol:AppCoins:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/110.sol:485:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/110.sol:503:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    balances[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:contract1/110.sol:434:63: Warning: Integer Overflow.
+        if( balances[msg.sender] >= _amount && _amount > 0 && balances[_to] + _amount
+Integer Overflow occurs if:
+    _amount = 67419346655525027280071070946112097648534143608088887667851415925010121249705
+    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155
+    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/110.sol:CampaignLibrary:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/111.sol:Advertisement:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 68.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/111.sol:607:28: Warning: Integer Overflow.
+            cancelCampaign(bidIdList[i]
+Integer Overflow occurs if:
+    bidIdList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639423
+    owner = 0
+contract1/111.sol:681:9: Warning: Integer Overflow.
+        bidIdList.push(campaign.bidId)
+Integer Overflow occurs if:
+    budget = 99680074490191866274164813673650923762147211753355305550131047636265089368064
+    endDate = 0
+    bidIdList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    startDate = 0
+    price = 99680074490191866274164813673650923762147211753355305550131047636265089368064
+contract1/111.sol:515:1: Warning: Integer Overflow.
+contract Advertisement {
+^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    bidIdList.length = 10889035741470030830827987437816582766594
+    owner = 0
+contract1/111.sol:579:17: Warning: Integer Overflow.
+                devBalance.devs.push(dev)
+Integer Overflow occurs if:
+    bidIdList.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/111.sol:AdvertisementFinance:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 90.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/111.sol:326:9: Warning: Integer Underflow.
+        balanceDevelopers[_developer] -= _value
+Integer Underflow occurs if:
+    balanceDevelopers[_developer] = 0
+    advertisementContract = 0
+INFO:symExec:contract1/111.sol:339:54: Warning: Integer Overflow.
+            withdraw(developers[i],balanceDevelopers[developers[i]
+Integer Overflow occurs if:
+    developers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+contract1/111.sol:339:22: Warning: Integer Overflow.
+            withdraw(developers[i]
+Integer Overflow occurs if:
+    developers.length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+contract1/111.sol:319:9: Warning: Integer Overflow.
+        balanceDevelopers[_developer] += _value
+Integer Overflow occurs if:
+    balanceDevelopers[_developer] = 1
+    developerExists[_developer] = 255
+    advertisementContract = 0
+contract1/111.sol:260:1: Warning: Integer Overflow.
+contract AdvertisementFinance {
+^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    developerExists[_developer] = 0
+    advertisementContract = 0
+contract1/111.sol:315:13: Warning: Integer Overflow.
+            developers.push(_developer)
+Integer Overflow occurs if:
+    developerExists[_developer] = 0
+    advertisementContract = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/111.sol:AdvertisementStorage:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 68.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/111.sol:106:13: Warning: Integer Overflow.
+            campaign.startDate
+contract1/111.sol:109:13: Warning: Integer Overflow.
+            campaign.owner
+contract1/111.sol:108:13: Warning: Integer Overflow.
+            campaign.valid
+contract1/111.sol:104:13: Warning: Integer Overflow.
+            campaign.price
+contract1/111.sol:107:13: Warning: Integer Overflow.
+            campaign.endDate
+contract1/111.sol:208:16: Warning: Integer Overflow.
+        return campaigns[bidId].valid
+contract1/111.sol:200:9: Warning: Integer Overflow.
+        campaigns[bidId].endDate
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/111.sol:155:9: Warning: Integer Overflow.
+        campaigns[bidId].price
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/111.sol:215:9: Warning: Integer Overflow.
+        campaigns[bidId].valid
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/111.sol:163:16: Warning: Integer Overflow.
+        return campaigns[bidId].budget
+contract1/111.sol:230:9: Warning: Integer Overflow.
+        campaigns[bidId].owner
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/111.sol:148:16: Warning: Integer Overflow.
+        return campaigns[bidId].price
+contract1/111.sol:185:9: Warning: Integer Overflow.
+        campaigns[bidId].startDate
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/111.sol:178:16: Warning: Integer Overflow.
+        return campaigns[bidId].startDate
+contract1/111.sol:170:9: Warning: Integer Overflow.
+        campaigns[bidId].budget
+Integer Overflow occurs if:
+    allowedAddresses[msg.sender] = 255
+contract1/111.sol:105:13: Warning: Integer Overflow.
+            campaign.budget
+contract1/111.sol:223:16: Warning: Integer Overflow.
+        return campaigns[bidId].owner
+contract1/111.sol:193:16: Warning: Integer Overflow.
+        return campaigns[bidId].endDate
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/111.sol:AppCoins:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/111.sol:485:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/111.sol:503:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    balances[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:contract1/111.sol:434:63: Warning: Integer Overflow.
+        if( balances[msg.sender] >= _amount && _amount > 0 && balances[_to] + _amount
+Integer Overflow occurs if:
+    _amount = 67419346655525027280071070946112097648534143608088887667851415925010121249705
+    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155
+    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/111.sol:CampaignLibrary:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/113.sol:AppCoinsIAB:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 33.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/113.sol:72:5: Warning: Integer Overflow.
+    function buy(string _packageName, string _sku, uint256 _amount, address _addr_appc, address _dev, address _appstore, address _oem, bytes2 _countryCode) public view returns (bool) {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _packageName = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/113.sol:56:5: Warning: Integer Overflow.
+    function informOffChainBuy(address[] _walletList, bytes32[] _rootHashList) public onlyAllowedAddress("informOffChainTransaction") {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _walletList = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/114.sol:Baxgold:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 72.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/114.sol:103:5: Warning: Integer Underflow.
+    string public symbol
+contract1/114.sol:104:5: Warning: Integer Underflow.
+    string public  name
+contract1/114.sol:129:16: Warning: Integer Underflow.
+        return _totalSupply  - balances[address(0)]
+Integer Underflow occurs if:
+    _totalSupply = 0
+    balances[address(0)] = 1
+INFO:symExec:contract1/114.sol:201:5: Warning: Integer Overflow.
+    function approveAndCall(address spender, uint tokens, bytes data) public returns (bool success) {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/114.sol:Owned:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/114.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/117.sol:ExShellToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 76.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/117.sol:92:5: Warning: Integer Underflow.
+    string public name = "ExShellToken"
+contract1/117.sol:94:5: Warning: Integer Underflow.
+    string public symbol = "ET"
+INFO:symExec:contract1/117.sol:6:21: Warning: Integer Overflow.
+        uint256 z = x + y
+Integer Overflow occurs if:
+    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296
+    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    status = 255
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/117.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/117.sol:StandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/117.sol:6:21: Warning: Integer Overflow.
+        uint256 z = x + y
+Integer Overflow occurs if:
+    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296
+    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    status = 255
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/118.sol:ExShellStock:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 76.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/118.sol:92:5: Warning: Integer Underflow.
+    string public name = "ExShellStock"
+contract1/118.sol:94:5: Warning: Integer Underflow.
+    string public symbol = "ES"
+INFO:symExec:contract1/118.sol:6:21: Warning: Integer Overflow.
+        uint256 z = x + y
+Integer Overflow occurs if:
+    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296
+    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    status = 255
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/118.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/118.sol:StandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/118.sol:6:21: Warning: Integer Overflow.
+        uint256 z = x + y
+Integer Overflow occurs if:
+    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296
+    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    status = 255
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/119.sol:HuobiPoolToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 76.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/119.sol:94:5: Warning: Integer Underflow.
+    string public symbol = "HPT"
+contract1/119.sol:92:5: Warning: Integer Underflow.
+    string public name = "HuobiPoolToken"
+INFO:symExec:contract1/119.sol:6:21: Warning: Integer Overflow.
+        uint256 z = x + y
+Integer Overflow occurs if:
+    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296
+    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    status = 255
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/119.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/119.sol:StandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/119.sol:6:21: Warning: Integer Overflow.
+        uint256 z = x + y
+Integer Overflow occurs if:
+    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296
+    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    status = 255
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/120.sol:Owned:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/120.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/120.sol:ZEXCoin:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 72.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/120.sol:104:5: Warning: Integer Underflow.
+    string public  name
+contract1/120.sol:129:16: Warning: Integer Underflow.
+        return _totalSupply  - balances[address(0)]
+Integer Underflow occurs if:
+    _totalSupply = 0
+    balances[address(0)] = 1
+contract1/120.sol:103:5: Warning: Integer Underflow.
+    string public symbol
+INFO:symExec:contract1/120.sol:201:5: Warning: Integer Overflow.
+    function approveAndCall(address spender, uint tokens, bytes data) public returns (bool success) {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/122.sol:ICO_Hold:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/122.sol:24:13: Warning: Integer Overflow.
+            deposits[msg.sender] += msg.value
+Integer Overflow occurs if:
+    deposits[msg.sender] = 89413144858979776324436829149382958719147370228438792900172768656854644693169
+INFO:symExec:contract1/122.sol:29:9: Warning: Timestamp Dependency.
+        if (isOwner() && now >= openDate) {
+        ^
+Spanning multiple lines.
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/122.sol:Ownable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/123.sol:BCBCOIN:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 67.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/123.sol:8:5: Warning: Integer Underflow.
+    string public symbol
+contract1/123.sol:154:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    allowance[_from][msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/123.sol:7:5: Warning: Integer Underflow.
+    string public name
+contract1/123.sol:136:9: Warning: Integer Underflow.
+        totalSupply -= _value
+Integer Underflow occurs if:
+    _value = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    balanceOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:contract1/123.sol:116:5: Warning: Integer Overflow.
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData)
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/123.sol:53:33: Warning: Integer Overflow.
+        uint previousBalances = balanceOf[_from] + balanceOf[_to]
+Integer Overflow occurs if:
+    _value = 0
+    balanceOf[_from] = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+    balanceOf[_to] = 102754238
+    _to = 1461501637330902918203684832716283019655932542975
+    allowance[_from][msg.sender] = 0
+contract1/123.sol:60:16: Warning: Integer Overflow.
+        assert(balanceOf[_from] + balanceOf[_to]
+Integer Overflow occurs if:
+    _value = 0
+    balanceOf[_from] = 57896044618658097711785492504343953926634992332820282019728792003956564819967
+    balanceOf[_to] = 57896044618763410003454049691041871954318662765139177115129341115211412668417
+    _to = 1461501637330902918203684832716283019655932542975
+    allowance[_from][msg.sender] = 0
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/126.sol:TestCoin:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 73.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/126.sol:62:5: Warning: Integer Underflow.
+    string public name
+contract1/126.sol:64:5: Warning: Integer Underflow.
+    string public symbol
+INFO:symExec:contract1/126.sol:87:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+contract1/126.sol:79:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152
+    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/13.sol:EcomethToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/13.sol:42:13: Warning: Integer Overflow.
+        c = a + b
+Integer Overflow occurs if:
+    _amount = 31582706044363783228869092695952588749798531615273407166948120792925774349621
+    balances[_to] = 108034400225318408420380440996632903434924151874951478569973452415569685626161
+    allowed[_from][msg.sender] = 31582706044363783228869092695952588749798531615273407166948120792925774349621
+    balances[_from] = 31582706044363783228869092695952588749798531615273407166948120792925774349621
+    _to = 1461501637330902918203684832716283019655932542975
+contract1/13.sol:159:5: Warning: Integer Overflow.
+    function adminClaimAirdropMultiple(address[] _addresses, uint _amount) public onlyOwner {        
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _addresses = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/13.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/132.sol:KhuuKoin:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 72.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/132.sol:104:5: Warning: Integer Underflow.
+    string public  name
+contract1/132.sol:103:5: Warning: Integer Underflow.
+    string public symbol
+contract1/132.sol:129:16: Warning: Integer Underflow.
+        return _totalSupply  - balances[address(0)]
+Integer Underflow occurs if:
+    _totalSupply = 0
+    balances[address(0)] = 1
+INFO:symExec:contract1/132.sol:201:5: Warning: Integer Overflow.
+    function approveAndCall(address spender, uint tokens, bytes data) public returns (bool success) {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    data = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/132.sol:Owned:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/132.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/134.sol:EXM20:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 49.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/134.sol:64:5: Warning: Integer Underflow.
+    string public version = 'H0.1'
+contract1/134.sol:63:5: Warning: Integer Underflow.
+    string public symbol
+contract1/134.sol:61:5: Warning: Integer Underflow.
+    string public name
+contract1/134.sol:54:1: Warning: Integer Underflow.
+contract EXM20 is StandardERC20 {
+^
+Spanning multiple lines.
+INFO:symExec:contract1/134.sol:74:5: Warning: Integer Overflow.
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/134.sol:27:13: Warning: Integer Overflow.
+            balances[_to] += _value
+Integer Overflow occurs if:
+    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296
+    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/134.sol:StandardERC20:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/134.sol:19:13: Warning: Integer Overflow.
+            balances[_to] += _value
+Integer Overflow occurs if:
+    _value = 67419346655525027280071070946112097648534143608088887667851415925010121249705
+    balances[_to] = 111771850588589477980448691424064340015804983699214872171395667984683992420155
+    balances[msg.sender] = 67419346655525027280071070946112097648534143608088887667851415925010121249705
+contract1/134.sol:27:13: Warning: Integer Overflow.
+            balances[_to] += _value
+Integer Overflow occurs if:
+    _value = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_to] = 115792089237316195423570985008687907852929702298719625575994204896882187098296
+    allowed[_from][msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+    balances[_from] = 43422033463993573283839119378257965444976244249615211514796594002966269975960
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/134.sol:Token:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/14.sol:TokenDemo:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 67.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/14.sol:21:5: Warning: Integer Underflow.
+    string public name
+contract1/14.sol:23:5: Warning: Integer Underflow.
+    string public symbol
+INFO:symExec:contract1/14.sol:49:9: Warning: Integer Overflow.
+        balances[_to] += _value
+Integer Overflow occurs if:
+    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/140.sol:ETCCoin:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/140.sol:132:5: Warning: Integer Overflow.
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData) public returns (bool success) {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    _extraData = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/140.sol:21:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    _amount = 31582706044363783228869092695952588749798531615273407166948120792925774349621
+    balances[_to] = 108034400225318408420380440996632903434924151874951478569973452415569685626161
+    allowed[_from][msg.sender] = 31582706044363783228869092695952588749798531615273407166948120792925774349621
+    balances[_from] = 31582706044363783228869092695952588749798531615273407166948120792925774349621
+    _to = 1461501637330902918203684832716283019655932542975
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/140.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/141.sol:Ooredoo:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/141.sol:59:5: Warning: Integer Underflow.
+    string public name = "Ooredoo"
+contract1/141.sol:60:5: Warning: Integer Underflow.
+    string public symbol = "ORE"
+INFO:symExec:contract1/141.sol:37:21: Warning: Integer Overflow.
+        uint256 c = a + b
+Integer Overflow occurs if:
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    _to = 1461501637330902918203684832716283019655932542975
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/141.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/142.sol:P4WDToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/142.sol:7:3: Warning: Integer Underflow.
+  string public name = "Pay 4ward"
+INFO:symExec:contract1/142.sol:3:1: Warning: Integer Overflow.
+contract P4WDToken {
+^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    companionsList.push(_companion) = 105782898658114362639998236590588058411517566113314665475433552748888561006558
+    owner = 0
+contract1/142.sol:61:3: Warning: Integer Overflow.
+  function setName(string _name) onlyOwner public {
+  ^
+Spanning multiple lines.
+contract1/142.sol:15:3: Warning: Integer Overflow.
+  address[] public companionsList
+contract1/142.sol:152:5: Warning: Integer Overflow.
+    companionsList.push(_companion)
+Integer Overflow occurs if:
+    companionsList.push(_companion) = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/142.sol:SafeERC20:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/142.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/144.sol:BasicToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/144.sol:116:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152
+    _value = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+    _to = 1461501637330902918203684832716283019655932542975
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/144.sol:BurnableToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/144.sol:116:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    balances[_to] = 85653202831209899131921273706816539903532775246499202405936884825549521553152
+    balances[msg.sender] = 44369063854674067291029404066660873444229566625561754964912869797988903417852
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/144.sol:Ownable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/144.sol:Pausable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/144.sol:Pen:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/144.sol:116:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    transferEnabled = 23384026197294446691258957323460528314494920687616
+    value = 57896044618658509087924822806327151834286013645900028990874440970138164396032
+    balances[_to] = 113869763081710383824231418470703620893641407787738155338990187027686288339711
+    allowed[_from][msg.sender] = 57896044618658509087924822806327151834286013645900028990874440970138164396032
+    balances[_from] = 57896044618658509087924822806327151834286013645900028990874440970138164396032
+    adminAddr = 1461501637330902918203684832716280767856118857727
+    owner = 1461501637330902918203684832716280767856118857727
+    to = 2251799813685248
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/144.sol:PenCrowdsale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/144.sol:548:5: Warning: Integer Overflow.
+    function whitelist(address[] users) public onlyOwner {
+    ^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    users = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+contract1/144.sol:116:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    stage = 0
+    durationInSeconds = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    owner = 0
+contract1/144.sol:687:42: Warning: Integer Overflow.
+            allocateTokensBeforeOffering(toList[i]
+Integer Overflow occurs if:
+    stage = 0
+    toList = 115792089237316195423570985008687907853269984665640564039457584007913129639899
+    owner = 0
+contract1/144.sol:687:53: Warning: Integer Overflow.
+            allocateTokensBeforeOffering(toList[i], tokensList[i]
+Integer Overflow occurs if:
+    stage = 0
+    tokensList = 115792089237316195423570985008687907853269984665640564039457584007913129639899
+    owner = 0
+contract1/144.sol:566:21: Warning: Integer Overflow.
+        extraTime = capReleaseTimestamp + 7 days
+Integer Overflow occurs if:
+    stage = 0
+    owner = 0
+contract1/144.sol:565:31: Warning: Integer Overflow.
+        capReleaseTimestamp = startTime + 5 hours
+Integer Overflow occurs if:
+    stage = 0
+    owner = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/144.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/144.sol:StandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:contract1/144.sol:116:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    _value = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_to] = 95515132405035013240498949941729301185179799140209929091396633094036584928231
+    allowed[_from][msg.sender] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    balances[_from] = 37717208912933073374861050775867160511051478474789766132129094234564326678807
+    _to = 1461501637330902918203684832716283019655932542975
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/146.sol:SafeERC20:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/146.sol:TokenTimelock:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 96.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:Solidity compilation failed. Please use -ce flag to see the detail.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract contract1/15.sol:ContractLib:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract contract1/15.sol:NXX:
+INFO:symExec:	============ Results ===========
