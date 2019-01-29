@@ -1,7 +1,7 @@
 import re
 import torch
 import torch.nn as nn
-from model.LSTM import LSTMClassifier
+# from model.LSTM import LSTMClassifier
 from torch.autograd import Variable
 
 text = """mapping (address => uint) public balances;
@@ -42,21 +42,21 @@ text = re.sub(r"'", " ", text)
 text = re.sub(r";", " ; ", text)
 text = re.sub(r":", " : ", text)
 
-print(text)
+# print(text)
 
 text = text.split()
-print(text)
+print("Data cleaned results:", text)
 
 vocab = set(text)
-print(vocab)
+print("vocab set", vocab)
 vocab_size = len(vocab)
-print(vocab_size)
+# print(vocab_size)
 
 word_to_ix = {word: i for i, word in enumerate(vocab)}
 print(word_to_ix)
 
 embeds = nn.Embedding(39, 100)
-print(embeds(Variable(torch.LongTensor(vocab))))
+# print(embeds(Variable(torch.LongTensor(vocab))))
 
 data = []
 for i in range(2, len(text) - 2):
@@ -65,8 +65,6 @@ for i in range(2, len(text) - 2):
     target = text[i]
     data.append((context, target))
 
-print(data[:5])
-print(data[0][0])
 
 
 # prepare data
@@ -94,9 +92,9 @@ out_size = 2
 batch_size = 10
 num_epochs = 2
 learning_rate = 0.003
-model = LSTMClassifier(batch_size, out_size, hidden_size, vocab_size, embedding_size, num_layers)
-criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+# model = LSTMClassifier(batch_size, out_size, hidden_size, vocab_size, embedding_size, num_layers)
+# criterion = nn.CrossEntropyLoss()
+# optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 
 # See what the scores are before training
