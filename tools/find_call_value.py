@@ -72,4 +72,4 @@ def copyFile(src_file):
 
 if __name__ == "__main__":
     for i in range(41):
-        getDirList("/media/jion1/data/contract/contract" + str(i+1) + "/")
+        getDirList("/media/jion1/data/contract/contract" + str(i+1) + "/")  # 修改为自己主机上的文件地址
