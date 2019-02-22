@@ -5,7 +5,7 @@ import os
 import re
 import shutil
 
-regtxt = r'.+?\.sol'  # 扫描对象为txt文件.
+regtxt = r'.+?\.sol'  # 扫描对象为.sol文件.
 regcontent = r'call.value'  # 列出内容含有'call.value'的文件
 
 
