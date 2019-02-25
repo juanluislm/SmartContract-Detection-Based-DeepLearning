@@ -11,11 +11,11 @@ def find_location(filepath):
     for i in range(line_len):
         if 'call.value' in lines[i]:
             location = i
-    out_selected_code(filepath, location)
+    extract_selected_code(filepath, location)
 
 
 # output selected code
-def out_selected_code(filepath, location):
+def extract_selected_code(filepath, location):
     f = open(filepath, 'r')
     lines = f.readlines()
     f.close()
